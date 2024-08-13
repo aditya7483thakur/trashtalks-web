@@ -1,5 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -14,12 +18,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in milliseconds
+      easing: "ease-in-out", // easing for the animations
+      once: true, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   return (
     <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
