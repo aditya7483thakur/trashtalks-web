@@ -1,39 +1,47 @@
-import Link from "next/link";
-
 const Hero = () => {
   return (
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-white pt-[120px] dark:bg-gray-dark "
       >
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
-                </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    🔥 Get Pro
-                  </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Star on GitHub
-                  </Link>
+        <div className="container " data-aos="fade-down">
+          <div className="mx-4 flex flex-wrap justify-center">
+            <div className="flex w-[90%] items-center justify-between">
+              <div className="flex h-[70%] w-1/2 flex-col justify-evenly">
+                <style>
+                  {`
+          :is(.dark .dark\\:via-pink-700) {
+            --tw-gradient-to: rgb(255 137 186/ 80%) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), #be185d var(--tw-gradient-via-position), var(--tw-gradient-to);
+          }
+        `}
+                </style>
+                <div className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-6xl font-bold text-transparent dark:from-purple-300 dark:via-pink-700">
+                  Lorem ipsum dolor sit amet consectetur
                 </div>
+
+                <div className="text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis nulla excepturi ab quaerat laborum ex vero error
+                  nam ducimus tenetur rem{" "}
+                </div>
+                <button className="relative inline-flex h-12 overflow-hidden rounded-2xl p-[3px] focus:outline-none active:scale-95">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
+                  <span className="relative inline-flex h-full w-full items-center justify-center gap-2 rounded-[14px] bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl">
+                    Download App
+                  </span>
+                </button>
+              </div>
+              <div
+                className="flex h-full w-1/2 items-center justify-center "
+                data-aos="fade-left"
+              >
+                <img
+                  src="https://assets-global.website-files.com/65c9b678d86972b1b07c57b6/65ca29e72617ece37c6521de_Frame_1.png"
+                  alt=""
+                  className="h-auto w-6/12"
+                />
               </div>
             </div>
           </div>
