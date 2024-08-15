@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <>
@@ -18,20 +20,41 @@ const Hero = () => {
         `}
                 </style>
                 <div className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-6xl font-bold text-transparent dark:from-purple-300 dark:via-pink-700">
-                  Lorem ipsum dolor sit amet consectetur
+                  TrashTalks: The Bot That Burns!
                 </div>
 
                 <div className="text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Blanditiis nulla excepturi ab quaerat laborum ex vero error
-                  nam ducimus tenetur rem{" "}
+                  #TrashTalking with AI : The AI that turns your questions into
+                  hilarious comebacks!
                 </div>
-                <button className="relative inline-flex h-12 overflow-hidden rounded-2xl p-[3px] focus:outline-none active:scale-95">
-                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
-                  <span className="relative inline-flex h-full w-full items-center justify-center gap-2 rounded-[14px] bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl">
-                    Download App
-                  </span>
-                </button>
+                <div>
+                  <Link
+                    href={
+                      "https://drive.google.com/uc?export=download&id=1-AVJwyhjU-PbAcBX7sFUk70UzJaATMFm"
+                    }
+                    className="relative mr-6 inline-flex  h-12 overflow-hidden rounded-2xl p-[3px] focus:outline-none active:scale-95"
+                  >
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
+                    <span className="relative inline-flex h-full w-full items-center justify-center gap-2 rounded-[14px] bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl">
+                      Download App
+                    </span>
+                  </Link>
+                  <Link
+                    href={"https://github.com/lordsid003/trashtalks"}
+                    className="relative inline-flex h-12 overflow-hidden rounded-2xl p-[3px] focus:outline-none active:scale-95"
+                  >
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
+                    <span className="relative inline-flex h-full w-full items-center justify-center gap-2 rounded-[14px] bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl">
+                      Source Code
+                    </span>
+                  </Link>
+                </div>
+                <p className="text-xs">
+                  **Google drive detects the apk file as harmful executable.{" "}
+                  <br />
+                  However, the application is completely safe and has no harmful
+                  scipts involved with it.
+                </p>
               </div>
               <div
                 className="flex h-full w-1/2 items-center justify-center "
