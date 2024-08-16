@@ -41,7 +41,7 @@ const AboutSectionOne = () => {
               </div>
             </div>
             <div className="flex w-full justify-center px-4 lg:w-1/2">
-              <Image
+              <img
                 src="/collage-trashtalks.png"
                 alt="App Screenshots"
                 className="h-auto w-full max-w-[400px]"
