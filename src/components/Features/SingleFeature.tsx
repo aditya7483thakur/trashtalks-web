@@ -6,6 +6,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
     <div
       className="w-full "
       data-aos="fade-up"
+      data-aos-delay="300"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="800"
     >

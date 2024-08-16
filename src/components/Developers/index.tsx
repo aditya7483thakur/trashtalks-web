@@ -6,14 +6,16 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "Siddharth",
-    content: "string",
+    content:
+      "Machine Learning and React Native Developer proficient in designing full-fledged applications with great UI and functionalities. Well-versed with core ML algorithms and NLP.",
     linkedin: "https://www.linkedin.com/in/siddharth-verma-53981a256/",
-    image: "/images/testimonials/auth-02.png",
+    image: "/Siddharth.jpeg",
   },
   {
     id: 2,
     name: "Aditya",
-    content: "A profficient MERN stack and React native developer",
+    content:
+      "MERN Stack and React Native Developer with strong skills in TypeScript, Next.js, and web design, focused on building responsive and user-friendly applications.",
     linkedin: "https://www.linkedin.com/in/aditya7483/",
     image: "/Aditya.jpeg",
   },
@@ -21,14 +23,14 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
+    <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20  lg:py-28">
       <div className="container mx-auto">
         <SectionTitle
           title="Meet Our Developers"
           paragraph="The team behind trashtalks-app"
           center
         />
-        <div className="flex  flex-wrap justify-center ">
+        <div className="flex  flex-col-reverse flex-wrap justify-center md:flex-row ">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}

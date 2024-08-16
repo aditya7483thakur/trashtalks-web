@@ -41,9 +41,9 @@ const AboutSectionOne = () => {
             </div>
             <div className="flex w-full justify-center px-4 lg:w-1/2">
               <img
-                src="https://assets-global.website-files.com/65c9b678d86972b1b07c57b6/65ca29e72617ece37c6521de_Frame_1.png"
-                alt="App Screenshot"
-                className="h-auto w-full max-w-[300px]"
+                src="/collage-trashtalks.png"
+                alt="App Screenshots"
+                className="h-auto w-full max-w-[400px]"
                 data-aos="fade-left"
               />
             </div>

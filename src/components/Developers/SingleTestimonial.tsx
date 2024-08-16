@@ -9,6 +9,8 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
     <div
       className="mx-auto mb-8 w-full sm:w-[90%] md:w-[70%] lg:w-[45%]"
       data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
       data-aos-anchor-placement="bottom-bottom"
     >
       <div className="rounded-lg bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark">

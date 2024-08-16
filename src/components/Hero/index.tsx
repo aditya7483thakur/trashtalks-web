@@ -4,11 +4,19 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative z-10 overflow-hidden bg-white pt-[120px] dark:bg-gray-dark"
+      className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark"
     >
       <div className="container mx-auto px-4" data-aos="fade-down">
         <div className="flex flex-wrap items-center justify-center">
           <div className="flex w-full flex-col items-center justify-between lg:w-[90%] lg:flex-row">
+            <style>
+              {`
+          :is(.dark .dark\\:via-pink-700) {
+            --tw-gradient-to: rgb(255 137 186/ 80%) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), #be185d var(--tw-gradient-via-position), var(--tw-gradient-to);
+          }
+        `}
+            </style>
             <div className="mb-10 flex w-full flex-col justify-evenly lg:mb-0 lg:w-1/2">
               <h1 className="mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-4xl font-bold text-transparent dark:from-purple-300 dark:via-pink-700 sm:text-5xl lg:text-6xl">
                 TrashTalks: The Bot That Burns!
@@ -48,7 +56,7 @@ const Hero = () => {
               data-aos="fade-left"
             >
               <img
-                src="https://assets-global.website-files.com/65c9b678d86972b1b07c57b6/65ca29e72617ece37c6521de_Frame_1.png"
+                src="/trashtalks-homeScreen.png"
                 alt="Illustration of TrashTalks AI"
                 className="w-10/12 lg:w-6/12"
               />
